@@ -45,7 +45,7 @@ export default function Hero() {
             <div className="relative h-96 w-96">
               <Image
                 src="/sheethal.png"
-                alt="Sheethal Joshi Thomas"
+                alt="Sheethal Joshi Thomass"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full shadow-2xl"
