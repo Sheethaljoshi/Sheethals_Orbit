@@ -22,6 +22,22 @@ const Container = ({
 
 const experiences = [
   {
+    role: 'Software Engineer Intern',
+    company: 'Salescode',
+    location: 'Thrissur, India',
+    period: 'January 2026 – Present',
+    duration: 'Present',
+    type: 'On-site',
+    description: [
+      'Architected an LLM-powered agentic API assistant (Quarkus, n8n, PostgreSQL, OpenAI) that auto-discovers APIs and synthesizes execution workflows, cutting manual operations by 60%.',
+      'Designed a self-healing audit pipeline that monitors logs, auto-raises Jira tickets for non-recoverable failures, and triggers LLM-driven pull request generation for bug fixes — eliminating 50% of manual triage and accelerating resolution by 35%.',
+      'Instrumented New Relic APM across production services, reducing mean time to diagnose (MTTD) incidents by 40% and improving system reliability visibility.',
+      'Shipped a full-stack product feature in Next.js end-to-end, reducing user task completion time by 25% as measured by post-release UX metrics.',
+    ],
+    technologies: ['Quarkus', 'n8n', 'PostgreSQL', 'OpenAI', 'Next.js', 'New Relic APM', 'Jira'],
+    highlights: ['60% fewer manual operations', '50% less manual triage', '40% faster MTTD', '25% faster task completion']
+  },
+  {
     role: 'Software Developer Intern',
     company: 'KDex Global',
     location: 'North Carolina, USA',
@@ -86,7 +102,7 @@ export default function Experience() {
         <div className="absolute -right-40 -bottom-40 h-80 w-80 rounded-full bg-gradient-to-br from-purple-400/10 to-purple-600/10 animate-pulse animation-delay-1000" />
         <div className="absolute left-1/3 top-1/4 h-40 w-40 rounded-full bg-gradient-to-br from-indigo-400/5 to-cyan-600/5 animate-bounce animation-delay-2000" />
       </div>
-      
+
       <Container id="experience" className="relative">
         <div className="container mx-auto px-4 relative z-10">
           {/* Header */}
@@ -106,7 +122,7 @@ export default function Experience() {
           <div className="relative max-w-6xl mx-auto">
             {/* Timeline line - hidden on mobile */}
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-purple-400 via-purple-500 to-indigo-600 opacity-30 hidden md:block" />
-            
+
             {experiences.map((exp, index) => (
               <div
                 key={exp.role + exp.company}
@@ -123,8 +139,8 @@ export default function Experience() {
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
                   <Card className={`
                     relative overflow-hidden transition-all duration-500 ease-out
-                    ${hoveredCard === index 
-                      ? 'shadow-2xl scale-105 border-purple-200 dark:border-purple-800' 
+                    ${hoveredCard === index
+                      ? 'shadow-2xl scale-105 border-purple-200 dark:border-purple-800'
                       : 'shadow-lg hover:shadow-xl border-gray-200 dark:border-gray-700'
                     }
                     bg-card border-border/50 backdrop-blur-sm border-2
@@ -151,7 +167,7 @@ export default function Experience() {
                           </div>
                         </div>
                       </div>
-                      
+
                       <CardTitle className="text-2xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-200">
                         {exp.role}
                       </CardTitle>

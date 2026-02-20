@@ -13,7 +13,7 @@ const skillCategories = [
   {
     title: 'Frameworks & Tools',
     icon: <Braces className="h-6 w-6" />,
-    skills: ['React.js', 'Next.js', 'FastAPI', 'Node.js', 'Express.js', 'Docusaurus'],
+    skills: ['React.js', 'Next.js', 'FastAPI', 'Node.js', 'Express.js', 'Quarkus', 'n8n', 'Docusaurus'],
   },
   {
     title: 'Databases',
@@ -23,12 +23,12 @@ const skillCategories = [
   {
     title: 'AI/ML Tools',
     icon: <Cpu className="h-6 w-6" />,
-    skills: ['OpenAI API', 'LangChain', 'Hugging Face Transformers', 'Deep Learning', 'TensorFlow', 'Scikit-learn', 'OpenCV', 'Keras'],
+    skills: ['OpenAI API', 'RAG pipelines', 'Agentic AI', 'LLM fine-tuning', 'Vector Embeddings', 'LangChain', 'Hugging Face Transformers', 'Deep Learning', 'TensorFlow', 'Scikit-learn', 'OpenCV', 'Keras'],
   },
   {
     title: 'Cloud Platforms',
     icon: <Cloud className="h-6 w-6" />,
-    skills: ['AWS (S3, CloudFront)'],
+    skills: ['AWS (S3, CloudFront)', 'New Relic APM', 'Docker', 'Linux', 'Elastic Search', 'Kibana'],
   },
   {
     title: 'Other',

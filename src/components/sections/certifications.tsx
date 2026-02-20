@@ -5,6 +5,12 @@ import { Container } from '../container';
 const certifications = [
   {
     icon: <Award className="h-8 w-8 text-primary" />,
+    title: 'AWS Certified Cloud Practitioner (CLF-C02)',
+    description: 'Issued by Amazon Web Services',
+    url: 'https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing'
+  },
+  {
+    icon: <Award className="h-8 w-8 text-primary" />,
     title: 'IBM Full Stack Developer Professional Certification',
     description: 'Issued by IBM',
     url: 'https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing'
@@ -31,7 +37,7 @@ export default function Certifications() {
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         {certifications.map((item, index) => (
           <a href={item.url} target="_blank" rel="noopener noreferrer" key={item.title} className="block h-full group">
-            <Card className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up h-full" style={{ animationDelay: `${200 * (index + 2)}ms`}}>
+            <Card className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:bg-secondary fade-in-up h-full" style={{ animationDelay: `${200 * (index + 2)}ms` }}>
               <div className="flex-shrink-0">{item.icon}</div>
               <div className="flex-grow">
                 <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
