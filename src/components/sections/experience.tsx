@@ -22,20 +22,21 @@ const Container = ({
 
 const experiences = [
   {
-    role: 'Software Engineer Intern',
+    role: 'Software Engineer',
     company: 'Salescode',
     location: 'Thrissur, India',
-    period: 'January 2026 – Present',
-    duration: 'Present',
+    period: 'January 2026 - Present',
+    duration: 'Current',
     type: 'On-site',
     description: [
-      'Architected an LLM-powered agentic API assistant (Quarkus, n8n, PostgreSQL, OpenAI) that auto-discovers APIs and synthesizes execution workflows, cutting manual operations by 60%.',
-      'Designed a self-healing audit pipeline that monitors logs, auto-raises Jira tickets for non-recoverable failures, and triggers LLM-driven pull request generation for bug fixes — eliminating 50% of manual triage and accelerating resolution by 35%.',
-      'Instrumented New Relic APM across production services, reducing mean time to diagnose (MTTD) incidents by 40% and improving system reliability visibility.',
-      'Shipped a full-stack product feature in Next.js end-to-end, reducing user task completion time by 25% as measured by post-release UX metrics.',
+      'Owned end-to-end design and delivery of the sales-returns pipeline (200+ commits, 100+ Flyway migrations) in Java/Quarkus on PostgreSQL — covering return validation, tax-compliance logic tied to an annual filing deadline, and credit-note issuance on a multi-tenant SaaS platform serving FMCG distributors.',
+      'Built logic to manage shared-inventory conflicts between free and paid stock and to recalculate promotional discounts when pricing changes mid-transaction — both cases where a wrong calculation causes direct financial loss or a compliance violation.',
+      'Backed the pipeline with 100+ integration tests covering compliance and financial-calculation edge cases.',
+      'Architected an LLM-powered agentic API assistant (Next.js/TypeScript, n8n, OpenAI) that fetches API documentation via a docs-RAG endpoint, uses an LLM to plan required endpoint calls/parameters from conversation history, and routes each request to either direct API execution or auto-creates n8n workflows depending on whether it involves scheduling, conditional logic, or external tools (email/Slack).',
+      'Created a self-healing audit pipeline that monitors audit-logs, creates LLM-driven patches for failures, auto-raises Jira tickets for non-recoverable failures, and triggers pull request generation for bug fixes — accelerating resolution by 35%.'
     ],
-    technologies: ['Quarkus', 'n8n', 'PostgreSQL', 'OpenAI', 'Next.js', 'New Relic APM', 'Jira'],
-    highlights: ['60% fewer manual operations', '50% less manual triage', '40% faster MTTD', '25% faster task completion']
+    technologies: ['Java', 'Quarkus', 'PostgreSQL', 'Flyway', 'Next.js', 'TypeScript', 'n8n', 'OpenAI'],
+    highlights: ['200+ commits', '100+ Flyway migrations', '100+ integration tests', '35% faster issue resolution']
   },
   {
     role: 'Software Developer Intern',

@@ -5,7 +5,7 @@ import { Container } from '../container';
 const certifications = [
   {
     icon: <Award className="h-8 w-8 text-primary" />,
-    title: 'AWS Certified Cloud Practitioner (CLF-C02)',
+    title: 'AWS Certified Cloud Practitioner (CLF-02)',
     description: 'Issued by Amazon Web Services',
     url: 'https://drive.google.com/drive/folders/1xWROUPyNRbVLBAtv7RooqaX7qpA6kpdC?usp=sharing'
   },
